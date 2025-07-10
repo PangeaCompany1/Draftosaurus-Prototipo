@@ -1,0 +1,153 @@
+/* Fondo general */
+body {
+  background-image: url('Fondo.jpg'); /* Ajustá si la imagen tiene otro nombre */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  color: rgb(255, 255, 255);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Botón Volver */
+.volver-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  padding: 10px 20px;
+  background-color: #00ffcc;
+  color: black;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 0 15px #00ffcc;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.volver-btn:hover {
+  background-color: #00e6b8;
+  box-shadow: 0 0 25px #00ffcc, 0 0 35px #00ffcc;
+  transform: scale(1.05);
+  color: black;
+}
+
+/* Título principal estilo gamer */
+.titulo-juego {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #00ffcc;
+  text-shadow: 2px 2px 8px #000;
+  font-family: 'Orbitron', sans-serif;
+  margin-top: 80px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* Estilo de cartas */
+.card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 255, 204, 0.7);
+}
+
+.card img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+/* Estilo base para párrafos (Mobile First) */
+p {
+  color: #ffffff;
+  text-align: center;
+  font-size: 1rem; /* 16px */
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+}
+
+/* Aumentar tamaño en pantallas más grandes */
+@media (min-width: 768px) {
+  p {
+    font-size: 1.2rem; /* 19px aprox */
+  }
+}
+
+@media (min-width: 1024px) {
+  p {
+    font-size: 1.3rem; /* 21px aprox */
+  }
+}
+
+/* Botones animados estilo juego */
+.custom-btn {
+  border-radius: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 12px 28px;
+  transition: 0.3s ease all;
+  box-shadow: 0 4px 15px rgba(0, 255, 204, 0.3);
+}
+
+.custom-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 255, 204, 0.6), 0 0 40px rgba(0, 255, 204, 0.4);
+  opacity: 0.9;
+}
+@media (min-width: 768px) {
+  .titulo-juego {
+    font-size: 3.5rem;
+  }
+
+  .card {
+    margin: 10px;
+  }
+
+  .custom-btn {
+    font-size: 1.2rem;
+    padding: 14px 32px;
+  }
+
+  table {
+    font-size: 1.1rem;
+  }
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Aplicar fondo a todo, no solo a body */
+body {
+  background-image: url('Fondo.jpg'); /* o la que estés usando */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* opcional */
+  display: flex;
+  flex-direction: column;
+}
+
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.fullscreen-fix {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
