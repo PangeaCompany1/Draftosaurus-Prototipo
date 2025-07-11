@@ -36,7 +36,7 @@ Este proyecto es un prototipo visual del juego de mesa **Draftosaurus**, desarro
 
 CONTROL DE VERSIONES
 
-14- y ya estaria todo cuando quieran hacer un control de versiones cambian algo de su comando
+14- y ya estaria todo cuando quieran hacer un control de versiones cambian algo de su comando en visual studio y 
     ponen git status les aparecera en rojo lo que se cambio ponen git add . para despues poner git commit -m "se agrega un ejemplo para control de versiones"
 15- para agregar esos cambios ponen git push -u origin main
 con eso hecho ya estaria todo 
